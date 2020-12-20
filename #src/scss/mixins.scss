@@ -1,0 +1,125 @@
+@mixin text($color, $font, $size, $weight, $text-transform) {
+    color: $color;
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    text-transform: $text-transform;
+}
+
+@mixin title($color, $height, $size, $margin) {
+    &-title {
+        height: $height;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__title {
+            position: relative;
+            @include text($color, ("Gotham-Medium", sans-serif), $size, 500, uppercase);
+            margin: $margin;
+            text-align: center;
+        }
+        &__title:before {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            content: "";
+            width: 100px;
+            border-top: 1px solid $color;
+        }
+    }
+}
+
+@mixin social($width, $display) {
+    &-social {
+        width: $width;
+        display: $display;
+        justify-content: space-around;
+        font-size: 16px;
+        font-weight: 400;
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #9299a1;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        &__item:hover {
+            border-color: white;
+        }
+        &__link {
+            color: white;
+        }
+        &__link:hover {
+            transform: scale(1.5);
+        }
+        @media only screen and (max-width: 576px){
+            width: 50%;
+        }
+    }
+}
+
+@mixin menu($display) {
+    &-menu {
+        display: $display;
+        justify-content: space-around;
+        width: 60%;
+        padding-left: 0;
+        &__item {
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 3px;
+                left: -17px;
+                border: 1px solid white;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+        &__item:hover {
+            &:before {
+                background-color: white;
+            }
+        }
+        &__link {
+            @include text(#ffffff, ("Gotham-Book", sans-serif), 14px, 400, uppercase);
+        }
+    }
+}
+
+@mixin menuFooter() {
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 0;
+        margin: 0 0;
+        &__link {
+            @include text(#ffffff, ("Gotham-Book", sans-serif), 14px, 400, uppercase);
+        }
+        &__link:hover {
+            color: mediumvioletred;
+            font-weight: 900;
+        }
+    }
+}
+
+@mixin button($margin) {
+    width: 190px;
+    height: 50px;
+    border: 1px solid $dark-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: $margin;
+    @include text($dark-text, ("Gotham-Book", sans-serif), 14px, 400, uppercase);
+    cursor: pointer;
+}

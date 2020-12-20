@@ -1,0 +1,1409 @@
+@import "~normalize.css";
+
+@font-face {
+    font-family: "Gotham-Book";
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gotham-Book'),
+    url(../fonts/GothamBook.woff) format('woff');
+}
+@font-face {
+    font-family: "Gotham-Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gotham-Bold'),
+    url(../fonts/gothambold1.woff) format('woff');
+}
+@font-face {
+    font-family: "Gotham-Medium";
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gotham-Medium'),
+    url(../fonts/gotham-medium-webfont.woff) format('woff');
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans'),
+    url(../fonts/OpenSans-Regular.ttf) format('truetype');
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a, a:hover {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+$dark-text: #2c4058;
+$grey-text: #4b5562;
+$light-text: #ffffff;
+$max: 1600px;
+$center: 0 auto;
+
+@mixin text($color, $font, $size, $weight, $text-transform) {
+    color: $color;
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    text-transform: $text-transform;
+}
+
+@mixin title($color, $height, $size, $margin) {
+    &-title {
+        height: $height;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__title {
+            position: relative;
+            @include text($color, ("Gotham-Medium", sans-serif), $size, 500, uppercase);
+            margin: $margin;
+            text-align: center;
+        }
+        &__title:before {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            content: "";
+            width: 100px;
+            border-top: 1px solid $color;
+        }
+    }
+}
+
+@mixin social($width, $display) {
+    &-social {
+        width: $width;
+        display: $display;
+        justify-content: space-around;
+        font-size: 16px;
+        font-weight: 400;
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #9299a1;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        &__item:hover {
+            border-color: white;
+        }
+        &__link {
+            color: white;
+        }
+        &__link:hover {
+            transform: scale(1.5);
+        }
+        @media only screen and (max-width: 576px){
+            width: 50%;
+        }
+    }
+}
+
+@mixin menu($display) {
+    &-menu {
+        display: $display;
+        justify-content: space-around;
+        width: 60%;
+        padding-left: 0;
+        &__item {
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 3px;
+                left: -17px;
+                border: 1px solid white;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+        &__item:hover {
+            &:before {
+                background-color: white;
+            }
+        }
+        &__link {
+            @include text(#ffffff, ("Gotham-Book", sans-serif), 14px, 400, uppercase);
+        }
+    }
+}
+
+@mixin menuFooter() {
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 0;
+        margin: 0 0;
+        &__link {
+            @include text(#ffffff, ("Gotham-Book", sans-serif), 14px, 400, uppercase);
+        }
+        &__link:hover {
+            color: mediumvioletred;
+            font-weight: 900;
+        }
+    }
+}
+
+@mixin button($margin) {
+    width: 190px;
+    height: 50px;
+    border: 1px solid $dark-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: $margin;
+    @include text($dark-text, ("Gotham-Book", sans-serif), 14px, 400, uppercase);
+    cursor: pointer;
+}
+
+.header {
+    position: relative;
+    max-width: $max;
+    margin: $center;
+    max-height: 800px;
+    height: 100vh;
+    background: url("../img/Lines_^__^.png") center no-repeat, url("../img/header.png") center / cover;
+
+    &-nav {
+        max-width: 1180px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 45px 0;
+        @media only screen and (max-width: 820px) {
+            padding: 20px 0;
+        }
+        &-logo {
+             img:last-child {
+                    display: none;
+             }
+            @media only screen and (max-width: 500px) {
+                align-self: flex-start;
+                margin-top: 10px;
+            }
+            @media only screen and (max-width: 500px) {
+                img:first-child {
+                    width: 70%;
+                }
+            }
+            @media only screen and (max-width: 400px) {
+                img:first-child {
+                    display: none;
+                }
+            }
+            @media only screen and (max-width: 399.98px) {
+                img:last-child {
+                    display: block;
+                }
+            }
+        }
+        &__burger-menu {
+            cursor: pointer;
+            z-index: 9999999;
+            @media only screen and (min-width: 900px) {
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 900px) {
+            &__burger-menu {
+                display: none;
+            }
+            &__burger-img,
+            &__burger-img:before,
+            &__burger-img:after {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                transform: translate(-50%, -50%);
+                width: 42px;
+                height: 5px;
+                background: $light-text;
+                cursor: pointer;
+            }
+            &__burger-img:before {
+                content: "";
+                top: -8px;
+                right: 0;
+                transform: translate(0, 0);
+                transition: all 0.3s;
+            }
+            &__burger-img:after {
+                content: "";
+                top: 8px;
+                right: 0;
+                transform: translate(0, 0);
+                transition: all 0.3s;
+            }
+            &__burger-menu:checked ~ &-menu {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                margin-right: 90px;
+            }
+            &__burger-menu:checked ~ &-menu .header-nav-menu__link{
+                font-size: 24px;
+            }
+            &__burger-menu:checked ~ &__burger-img {
+                transform: rotate(-45deg);
+                transition: all 0.3s;
+                 z-index: 9999999;
+            }
+            &__burger-menu:checked ~ &__burger-img:before {
+                transform: rotate(90deg);
+                transition: all 0.3s;
+                top: 0;
+            }
+            &__burger-menu:checked ~ &__burger-img:after {
+                display: none;
+            }
+        }
+        &--scroll {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            min-height: 10%;
+            background: #3281d5;
+            padding: 0 0;
+            transition: top 0.8s, left 0ms;
+            -webkit-box-shadow: 10px 10px 9px 5px rgba(0, 0, 0, 0.7);
+            box-shadow: 10px 10px 9px 5px rgba(0, 0, 0, 0.7);
+            z-index: 999;
+        }
+        @include menu(flex);
+        @media only screen and (max-width: 899.98px) {
+            @include menu(none);
+        }
+        @include social(20%, flex);
+        @media only screen and (max-width: 899.98px) {
+            @include social(20%, none);
+        }
+    }
+
+    &-slider {
+        position: relative;
+        width: 100%;
+        height: 40%;
+        margin: 75px auto;
+        display: flex;
+        align-items: center;
+        @media only screen and (max-height: 400px) {
+            margin: 15px auto;
+        }
+
+        &-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            &__title {
+                @include text($light-text, ("Gotham-Bold", sans-serif), 80px, 700, uppercase);
+                letter-spacing: 4px;
+                margin: 39px 0;
+                @media only screen and (max-width: 820px) {
+                    font-size: 40px;
+                }
+            }
+
+            &__info {
+                @include text($light-text, ("Gotham-Book", sans-serif), 18px, 400, uppercase);
+                letter-spacing: 5.4px;
+                margin: 0 0;
+                @media only screen and (max-width: 820px) {
+                    font-size: 14px;
+                }
+            }
+        }
+        .slick-dots {
+            position: absolute;
+            top: 50%;
+            right: 2.5%;
+            transform: translateY(-50%);
+            li {
+                margin-bottom: 40px;
+
+                button {
+                    font-size: 0;
+                    width: 9px;
+                    height: 9px;
+                    border-radius: 50%;
+                    border: 1px solid #9299a1;
+                    padding-left: 0;
+                    cursor: pointer;
+                    background-color: transparent;
+                }
+            }
+            .slick-active {
+                button {
+                    background-color: white;
+                    outline: none;
+                    overflow: visible;
+                    text-transform: none;
+                    outline-offset: 0;
+                }
+            }
+        }
+    }
+    &-arrow__down {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #9299a1;
+        border-radius: 50%;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #9299a1;
+        cursor: pointer;
+    }
+    &-arrow__down:hover {
+        border-color: white;
+        color: white;
+    }
+}
+
+.we-do {
+    max-width: $max;
+    min-height: 1633px;
+    margin: $center;
+    background-color: #ffffff;
+    @include title($dark-text, 264px, 43px, (0.83em 0 0.83em 0));
+    &-wrapper {
+        width: 100%;
+        min-height: 1369px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &-article {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            @media only screen and (max-width: 567px) {
+                flex-direction: column;
+                align-items: center;
+            }
+            &__back {
+                cursor: pointer;
+                max-width: 585px;
+                width: 36.5%;
+                height: 470px;
+                background: #55b7ff;
+                position: relative;
+                @media only screen and (max-width: 567px) {
+                    width: 60%;
+                    height: 300px;
+                }
+                @media only screen and (max-width: 400px) {
+                    width: 70%;
+                }
+            }
+            &__img {
+                cursor: pointer;
+                height: 470px;
+                max-width: 630px;
+                width: 40%;
+                position: absolute;
+                background: url("../img/joel-filipe-151697.jpg") center / cover;
+                @media only screen and (max-width: 567px) {
+                    height: 300px;
+                    width: 65%;
+                }
+                @media only screen and (max-width: 400px) {
+                    width: 70%;
+                }
+            }
+            &-info {
+                width: 32%;
+                align-self: flex-end;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 0 10%;
+                @media only screen and (max-width: 567px) {
+                    align-self: center;
+                    width: 70%;
+                }
+                &__small {
+                    @include text($dark-text, ("Gotham-Book", sans-serif), 22px, 400, uppercase);
+                    @media only screen and (max-width: 567px) {
+                        margin-top: 80px;
+                        font-size: 16px;
+                    }
+                }
+                &__big {
+                    @include text($dark-text, ("Gotham-Bold", sans-serif), 44px, 700, uppercase);
+                    margin-top: 0;
+                    @media only screen and (max-width: 567px) {
+                        font-size: 24px;
+                    }
+                }
+                &__text {
+                    @include text($grey-text, ("Open Sans", sans-serif), 18px, 400, unset);
+                    overflow: hidden;
+                    height: 80px;
+                }
+                &__button {
+                    @include button(40px 0 60px 0);
+                }
+                &__button:hover {
+                    background-color: #7d5ffa;
+                }
+                @media (hover: none) {
+                    &__button:active {
+                        background-color: #7d5ffa;
+                    }
+                }
+                &__location {
+                    @include text($dark-text, ("Open Sans", sans-serif), 18px, 400, unset);
+                }
+                &__location svg {
+                    margin-right: 6px;
+                }
+            }
+        }
+        &-article:last-child {
+            flex-direction: row-reverse;
+            @media only screen and (max-width: 567px) {
+                flex-direction: column;
+                align-items: center;
+            }
+            .we-do-wrapper-article__back {
+                background: #7e5aff;
+            }
+            .we-do-wrapper-article__img {
+                background: url("../img/photos-1284iH4Hjf4mhNgW.jpg") center / cover;
+                @-moz-document url-prefix() {
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+.news {
+    max-width: $max;
+    min-height: 1035px;
+    margin: $center;
+    background-color: #ffffff;
+    background-image:  url("../img/city_2_@2x.png"), linear-gradient(45deg, #3c7fd4 0%, #24ccfa 100%);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    @include title($light-text, 264px, 43px, (0.83em 0 0.83em 0));
+    &-slider {
+        position: relative;
+        width: 88%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        @media only screen and (max-width: 567px){
+            width: 100%;
+        }
+        &-slide {
+            width: 370px;
+            margin: 0 20px;
+            cursor: pointer;
+            @media only screen and (max-width: 567px) {
+                img  * {
+                    width: 250px;
+                }
+            }
+            @media only screen and (max-width: 415px) {
+                img * {
+                    width: 200px;
+                }
+            }
+            &-info * {
+                margin: 0 30px 30px 20px;
+            }
+            &-info {
+                position: relative;
+                margin: 0 0;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                background-color: #ffffff;
+                width: 370px;
+                height: 274px;
+
+                @media only screen and (max-width: 567px) {
+                    width: 250px;
+                }
+                @media only screen and (max-width: 415px) {
+                    width: 200px;
+                }
+                &__title {
+                    @include text($dark-text, ("Gotham-Bold", sans-serif), 22px, 700, uppercase);
+                    margin-bottom: 0;
+                    @media only screen and (max-width: 567px) {
+                        font-size: 14px;
+                    }
+                }
+                &__text {
+                    @include text($grey-text, ("Open Sans", sans-serif), 18px, 400, unset);
+                    @media only screen and (max-width: 567px) {
+                        font-size: 10px;
+                    }
+                }
+                &-author {
+                    position: absolute;
+                    bottom: -30px;
+                    left: -15px;
+                    margin: 0 0 10px;
+                    display: flex;
+                    align-items: flex-end;
+                    @media only screen and (max-width: 567px) {
+                        img * {
+                            height: 40px;
+                            width: 40px;
+                        }
+                    }
+                    @media only screen and (max-width: 415px) {
+                        img * {
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
+                    &__avatar {
+                        @media only screen and (max-width: 567px) {
+                            img * {
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                    }
+                    &-name {
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        width: 200px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+
+                        &__name {
+                            @include text($dark-text, ("Gotham-Book", sans-serif), 18px, 400, uppercase);
+                            width: 100%;
+                            @media only screen and (max-width: 567px) {
+                                font-size: 12px;
+                            }
+                            @media only screen and (max-width: 415px) {
+                                font-size: 8px;
+                            }
+                        }
+
+                        &__date {
+                            @include text(#55b7ff, ("Gotham-Book", sans-serif), 14px, 400, unset);
+                            @media only screen and (max-width: 567px) {
+                                font-size: 10px;
+                            }
+                             @media only screen and (max-width: 415px) {
+                                font-size: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+            &-info-author-name h5 {
+                margin-left: 20px;
+                margin-bottom: 5px;
+            }
+        }
+        @media only screen and (max-width: 567px) {
+            &-slide > * {
+                width: 250px;
+                height: 200px;
+            }
+        }
+        @media only screen and (max-width: 415px) {
+            &-slide > * {
+                width: 200px;
+                height: 170px;
+            }
+        }
+        .slick-dots {
+            position: absolute;
+            display: inline-flex;
+            bottom: -120px;
+            left: 50%;
+            transform: translateX(-50%);
+            li {
+                margin-bottom: 40px;
+                button {
+                    margin-right: 40px;
+                    font-size: 0;
+                    width: 9px;
+                    height: 9px;
+                    border-radius: 50%;
+                    border: 1px solid #9299a1;
+                    padding-left: 0;
+                    cursor: pointer;
+                    background-color: transparent;
+                }
+            }
+            .slick-active {
+                button {
+                    background-color: white;
+                    outline: none;
+                    overflow: visible;
+                    text-transform: none;
+                    outline-offset: 0;
+                }
+            }
+        }
+    }
+}
+
+.gallery {
+    max-width:  $max;
+    min-height: 1000px;
+    margin: $center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    @include title($dark-text, 264px, 43px, (0.83em 0 0.83em 0));
+    &-grid {
+        max-width: 1170px;
+        width: 73%;
+        min-height: 438px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        @media only screen and (max-width: 992px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        @media only screen and (max-width: 767px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+        @media only screen and (max-width: 567px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        }
+        &__pic {
+            height: 214px;
+            cursor: pointer ;
+            &--big {
+                height: 438px;
+                grid-row-start: 1;
+                grid-row-end: 3;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background: url("../img/gallery/scott-webb-176434.jpg") center / cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                @media only screen and (max-width: 767px) {
+                    grid-column-end: 2;
+                }
+            }
+            &--big:hover {
+                -webkit-filter: blur(4px);
+                filter: blur(4px);
+            }
+        }
+        &__pic:hover {
+            -webkit-filter: blur(4px);
+            filter: blur(4px);
+        }
+        &__pic:nth-child(2) {
+            background: url("../img/gallery/photos-13323p6Bdc0uhr8Bq.jpg") center / cover;
+        }
+        &__pic:nth-child(3) {
+            background: url("../img/gallery/echo-grid-156713.jpg") center / cover;
+        }
+        &__pic:nth-child(4) {
+            background: url("../img/gallery/fuse-brussels-169216.jpg") center / cover;
+        }
+        &__pic:last-child {
+            background: url("../img/gallery/tu-tram-pham-202263.jpg") center / cover;
+        }
+    }
+    &__button {
+        @include button(60px 0 140px 0);
+    }
+    &__button:hover {
+        background-color: #7d5ffa;
+    }
+}
+.map {
+    max-width: $max;
+    height: 700px;
+    margin: $center;
+    @media only screen and (max-width: 567px) {
+        height: 500px;
+    }
+}
+
+.footer {
+    position: relative;
+    max-width: $max;
+    margin: $center;
+    height: 524px;
+    background-color: #ffffff;
+    background-image: url("../img/scott-webb-176434.png"), linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-nav {
+        position: relative;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include menuFooter;
+        @media only screen and (max-width: 992px) {
+            width: 70%;
+        }
+        @media only screen and (max-width: 767px) {
+            width: 80%;
+        }
+        @media only screen and (max-width: 576px) {
+            width: 100%;
+        }
+        &-menu {
+            @media only screen and (max-width: 576px) {
+            display: none;
+            }
+        }
+        &__line {
+            width: 100%;
+            position: absolute;
+            top: 53px;
+            height: 1px;
+            background-color: #ffffff;
+            opacity: 0.1;
+        }
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            @include social(30%, flex);
+            @media only screen and (max-width: 576px) {
+                margin-top: 100px;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &-copyright {
+            display: flex;
+            color: #ffffff;
+            font-family: "Gotham-Book", sans-serif;
+            font-size: 14px;
+            margin-top: 38px;
+            @media only screen and (max-width: 576px){
+                margin: 10px 10px;
+            }
+            &__text {
+                font-size: 14px;
+                font-weight: 400;
+                margin: 0 30px 0 0;
+            }
+            &__made-in {
+                position: relative;
+                font-weight: 300;
+                margin: 0 0;
+            }
+            &__made-in:before {
+                position: absolute;
+                top: 0;
+                left: -15px;
+                content: "";
+                height: 100%;
+                opacity: 0.5;
+                border-right: 1px solid $light-text;
+            }
+        }
+    }
+    &-contact {
+        width: 48%;
+        max-width: 770px;
+        height: 100%;
+        max-height: 450px;
+        box-shadow: 0 -4px 30px rgba(133, 133, 133, 0.2);
+        background: url("../img/city@2x.png") left bottom white no-repeat;
+        position: absolute;
+        top: -55%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 50px;
+        @include title($dark-text, 170px, 43px, (0.83em 0 0 0));
+        @media only screen and (max-width: 567px) {
+            width: 70%;
+            padding: 0 25px;
+        }
+        &-title {
+            @media only screen and (max-width: 676px) {
+                &__title {
+                    font-size: 22px;
+                }
+            }
+            @media only screen and (max-width: 365px) {
+                &__title {
+                    font-size: 16px;
+                }
+            }
+        }
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-info {
+                &__text {
+                    margin: 0 0 30px 0;
+                    @include text($dark-text, ("Gotham-Bold", sans-serif), 1.2vw, 400, unset);
+                    @media only screen and (max-width: 567px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+            &-info svg {
+                margin-right: 10px;
+            }
+            &-info svg path {
+                fill: #6f42c1;
+            }
+
+            &-form {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                &__name {
+                    height: 40px;
+                    @include text($dark-text, ("Gotham-Book", sans-serif), 1.2vw, 400, uppercase);
+                    border: none;
+                    border-bottom: 1px solid $dark-text;
+                    margin-bottom: 40px;
+                    @media only screen and (max-width: 567px) {
+                        font-size: 10px;
+                    }
+                }
+                &__name:focus {
+                    outline: none;
+                    opacity: 0.5;
+                }
+                &__button {
+                    align-self: flex-end;
+                    width: 50%;
+                    height: 50px;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    display: -webkit-flex;
+                    -webkit-align-items: center;
+                    background-color: transparent;
+                    border: 1px solid $dark-text;
+                    @media only screen and (max-width: 767px){
+                        height: 30px;
+                        width: 80%;
+                        font-size: 10px;
+                    }
+                    @media only screen and (max-width: 567px){
+                        height: 30px;
+                        width: 100%;
+                    }
+                }
+                &__button:hover {
+                    background-color: #7d5ffa;
+                }
+            }
+        }
+    }
+}
